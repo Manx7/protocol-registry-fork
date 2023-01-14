@@ -62,7 +62,7 @@ const getWrapperScriptContent = (command) => {
 const saveWrapperScript = (protocol, content) => {
     const wrapperScriptPath = join(
         homedir,
-        `./${protocol}Wrapper.${
+        `./${protocol}.${
             process.platform === constants.platforms.windows ? 'bat' : 'sh'
         }`
     );
